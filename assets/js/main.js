@@ -568,58 +568,7 @@
         });
 		
 		
-		
-		
-		/* ==================================================
-			# Weekly Deals
-	 	===============================================*/
-		/**
-		 * WARNING: I set this coundtown to be running until the end of times.
-		 * So when you'll init the plugin, follow how it's done in plugin documentation.
-		 * e.g : instead of "month: d.getMonth() + 1" put "month: 10" for October.
-		 */
-		var d = new Date(),
-			countUpDate = new Date();
-		d.setDate(d.getDate() + 450);
-
-		// direct element injection & Count Up Example
-		var countUp = document.querySelector('.simply-countdown-countup');
-		simplyCountdown(countUp, {
-			year: countUpDate.getFullYear(),
-			month: countUpDate.getMonth() + 1,
-			day: countUpDate.getDate() +15,
-			hours: countUpDate.getHours() + 14,
-			minutes: countUpDate.getMinutes(),
-			seconds: countUpDate.getSeconds(),
-			countUp: true
-		});
-		
-		// default example
-		simplyCountdown('.simply-countdown-one', {
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			enableUtc: true
-		});
-
-		// inline example
-		simplyCountdown('.simply-countdown-inline', {
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			inline: true
-		});
-
-		//jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			enableUtc: false
-		});
-
-		
-		
+	
 		/* ==================================================
           # Pie Chart 
          ===============================================*/

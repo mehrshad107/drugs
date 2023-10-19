@@ -106,6 +106,7 @@ body {
     line-height: 2.8rem;
 	-moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
+    direction: rtl;
 }
 
 a{
