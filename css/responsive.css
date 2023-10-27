@@ -12,6 +12,8 @@
     .grid-3 {
         grid-template-columns: 1fr;
     }
+    .wkp-wrapper {
+        flex-direction: column;
 }
 *, ::after, ::before {
     box-sizing: border-box;

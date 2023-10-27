@@ -14828,11 +14828,12 @@ align-self: center;
 
 
 .wkp-box {
+  margin-top: 40px;
   padding: 3rem;
   position: relative;
   z-index: 1;
-  height: 30rem;
-  width: 30rem;
+  height: 18rem;
+  width: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14859,8 +14860,8 @@ align-self: center;
   left: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
--webkit-transition: .5s ease;
-transition: .5s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .wkp-box:hover::before {
@@ -14872,9 +14873,13 @@ transition: .5s ease;
   margin-top: 1rem;
 }
 
-.wkp-wrapper.grid-3 {
-  grid-gap: 6rem;
-  justify-content: center;
+.wkp-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
 }
 
 .wkp-icon i {
@@ -14918,6 +14923,9 @@ transition: .5s ease;
   padding-bottom: 2.5rem;
 }
 .de-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 8rem 0;
   background-color: var(--section-bg-1);
 }
