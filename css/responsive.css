@@ -8,6 +8,15 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 /* Normal desktop :992px. (Laptop 14") */
 @media (min-width: 992px) and (max-width: 1199px) {
 
