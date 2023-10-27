@@ -1,8 +1,4 @@
-/*
-    Template Name: Vicodin
-    Description: Medical eCommerce HTML Template
-    Version: 1.0.0
-*/
+
 /* Single side border-radius  */
 /* BORDER RADIUS */
 /* user select */
@@ -48,37 +44,106 @@
 # Margin Bottom
 # Custom margin Padding
 
-============================================================= */
-/* -------------------------------------
-    Google fonts
-------------------------------------- */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap'); */
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Rajdhani', sans-serif;
-*/
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Titillium+Web:wght@400;600;700;900&display=swap'); */
-/*
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-*/
-/*
 
-Last uses font
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
-*/
-/*
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap");
-/*
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Nunito', sans-serif;
-*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*-------------------------------------------------------
+9.Why Choose Us
+---------------------------------------------------------*/
+
+.ch-wpr .nav-tabs {
+  border: none;
+}
+
+.ch-wpr .ch-nv-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ch-wpr .ch-nv-txt i {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.ch-wpr .nav-tabs .nav-item.show .nav-link,
+.ch-wpr .nav-tabs .nav-link.active {
+   color: var(--white-color);
+   background-color: var(--theme-color); 
+   border: none; 
+}
+
+.ch-wpr .nav-tabs .nav-link:focus,
+.ch-wpr .nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.ch-wpr .nav-link {
+display: block;
+padding: 3rem;
+background-color: var(--white-color);
+border: none;
+border-radius: 0;
+margin-right: 2rem;
+}
+
+.ch-wpr #nav-tabContent {
+  margin-top: 2rem;
+}
+
+.ch-cn-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  background-color: var(--theme-color);
+}
+
+.ch-cn-l .ch-cn-l-info h6 {
+margin-bottom: 2rem;
+}
+
+.ch-cn-l .ch-cn-l-info h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.ch-cn-l .ch-cn-l-info p {
+  padding-right: 5rem;
+  margin-bottom: 2rem;
+}
+
+.ch-cn-l .ch-cn-l-info h6,
+.ch-cn-l .ch-cn-l-info h2,
+.ch-cn-l .ch-cn-l-info p,
+.ch-cn-l .ch-cn-l-info a{
+color: var(--white-color);
+}
+
+.ch-cn-l .ch-cn-l-info a {
+display: inline-block;
+border: 2px solid var(--white-color);
+padding: 1.2rem 3rem;
+text-transform: capitalize;
+line-height: 1;
+}
+
+.ch-cn-l .ch-cn-l-info a img {
+margin-left: 7px;
+}
+
 /* ====================================================
     Gutter Code 
 ==================================================== */
+*{
+  -webkit-font-smoothing: antialiased;
+}
 .container,
 .container-fluid {
   padding-left: 15px;
@@ -87,6 +152,8 @@ font-family: 'Nunito', sans-serif;
 .row {
   margin-right: -15px;
   margin-left: -15px; }
+
+  
 
 .col,
 .col-1,
@@ -227,8 +294,8 @@ font-family: 'Nunito', sans-serif;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5C727D;
-  --ltn__heading-font: 'Josefin Sans', sans-serif;
-  --ltn__body-font: 'Nunito Sans', sans-serif;
+  --ltn__heading-font: Iransans;
+  --ltn__body-font: Iransans;
   /* Footer ACD2D8 8CB2B2  */
   --ltn__color-1: #8cb2b2;
   --ltn__color-2: #ACD2D8;
@@ -6366,9 +6433,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__slide-item-2 .text-right .slide-brief {
   padding-right: 0px;
   border-right: 0;
-  padding-left: 30px;
-  border-left: 1px solid #576466;
-  margin-right: auto; }
+  padding-right: 30px;
+  border-right: 1px solid #576466;
+   }
 
 .ltn__slide-item-6 .text-center .slide-item-info,
 .ltn__slide-item-2 .text-center .slide-item-info {
@@ -6385,8 +6452,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .slide-brief {
   max-width: 450px; }
 
-.text-right .slide-brief {
-  margin-right: auto; }
 
 .text-center .slide-brief {
   margin-right: auto;
@@ -7114,8 +7179,73 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .product-title {
   font-size: 16px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-align: -webkit-center; }
 
+  .st-perloader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .st-perloader .st-perloader-in {
+    position: relative;
+  }
+  .st-perloader .st-perloader-in svg {
+    width: 110px;
+    height: 110px;
+  }
+  .st-perloader .st-wave-first svg {
+    fill: #eaeaea;
+  }
+  .st-perloader .st-wave-second {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    -webkit-animation: spark 1.25s linear infinite;
+            animation: spark 1.25s linear infinite;
+  }
+  .st-perloader .st-wave-second svg {
+    fill: #0cb8b6;
+  }
+  .st-perloader.st-color1 .st-wave-second svg {
+    fill: #27b1d9;
+  }
+  .st-perloader.st-color2 .st-wave-second svg {
+    fill: #ff375f;
+  }
+  
+  @-webkit-keyframes spark {
+    0% {
+      max-width: 0;
+    }
+    100% {
+      max-width: 100%;
+    }
+  }
+  
+  @keyframes spark {
+    0% {
+      max-width: 0;
+    }
+    100% {
+      max-width: 100%;
+    }
+  }  
 .product-ratting {
   margin-bottom: 5px; }
 
@@ -8625,7 +8755,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     width: 48%;
     right: 0;
     left: auto;
-    top: 0; }
+    top: 0;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+  }
 
 .nice-select .option {
   font-weight: 400; }
@@ -11323,6 +11456,10 @@ input.cart-plus-minus-box {
 /* ----------------------------------------------------
     Faq Area
 ---------------------------------------------------- */
+.author-name-designation{
+align-self: center;
+}
+
 .ltn__faq-inner .card {
   border: none;
   border-radius: 0;
@@ -14680,3 +14817,131 @@ input.cart-plus-minus-box {
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
+
+
+
+/*-------------------------------------------------------
+9.Process css 
+---------------------------------------------------------*/
+
+/*Working Process*/
+
+
+.wkp-box {
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 3rem;
+}
+
+
+.wkp-box::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  box-shadow: 0 0 30px rgb(219 219 219 / 47%);
+  -webkit-border-radius: 50% 0 50% 50%;
+  border-radius: 50% 0 50% 50%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+-webkit-transition: .5s ease;
+transition: .5s ease;
+}
+
+.wkp-box:hover::before {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wkp-info {
+  margin-top: 1rem;
+}
+
+.wkp-wrapper.grid-3 {
+  grid-gap: 6rem;
+  justify-content: center;
+}
+
+.wkp-icon i {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 0 1rem;
+  display: inline-block;
+  color: var(--thm-clr-1);
+}
+
+/* Home 2 */
+
+.prs-wrapper.grid-3 {
+  grid-gap: 8rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.prs-box {
+  text-align: center;
+  padding: 3rem 3rem 6rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.prs-box::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  background-image: url(assets/img/process/bg.png);
+  height: 460px;
+  width: 460px;
+  transform: translate(-50%, -50%);
+}
+
+.prs-info {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2.5rem;
+}
+.de-padding {
+  padding: 8rem 0;
+  background-color: var(--section-bg-1);
+}
+
+.prs-info::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  background-color: #E22555;
+  height: 1px;
+  width: 4.8rem;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.prs-info h6 {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}
+
+.slidee{
+  justify-content: flex-start;
+  display: flex;
+  text-align: -webkit-right;
+}

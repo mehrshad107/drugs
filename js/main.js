@@ -48,7 +48,16 @@
 (function($) {
   "use strict";
 
+    
+
     jQuery(document).ready(function(){
+        preloaderSetup();
+
+        function preloaderSetup() {
+            $(".st-perloader").fadeOut();
+            $("st-perloader-in").delay(150).fadeOut("slow");
+          }
+        
       
         /* --------------------------------------------------------
             1. Variables
