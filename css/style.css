@@ -7220,10 +7220,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
             animation: spark 1.25s linear infinite;
   }
   .st-perloader .st-wave-second svg {
-    fill: #0cb8b6;
+    fill: #0099ea;
   }
   .st-perloader.st-color1 .st-wave-second svg {
-    fill: #27b1d9;
+    fill: #0099ea;
   }
   .st-perloader.st-color2 .st-wave-second svg {
     fill: #ff375f;
