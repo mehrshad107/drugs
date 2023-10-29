@@ -383,6 +383,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .icon-whatsapp:before {
   content: "\e909";
+  color: #4dc45a;
 }
 .icon-youtube:before {
   content: "\e90a";
