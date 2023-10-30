@@ -1462,6 +1462,16 @@ ul {
       width: 15px;
       margin-bottom: -2px; }
 
+.not-found{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 108px;
+}
+
+
 /* slick-arrow */
 .slick-arrow {
   cursor: pointer;
