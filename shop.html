@@ -308,17 +308,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                               <div class="short-by text-center">
-                                    <select class="nice-select">
-                                        <option>دسته بندی </option>
-                                        <option>محبوب ترین</option>
-                                        <option>تازه ترین</option>
-                                        <option>قیمت کم به زیاد</option>
-                                        <option>قیمت زیاد به کم</option>
-                                    </select>
-                                </div> 
-                            </li>
+
                             <li>
                                <div class="showing-product-number text-right">
                                     <span>نمایش 9 از 20</span>
@@ -684,8 +674,8 @@
                     <div id="pagination-container" class="ltn__pagination-area text-center">
                         <div class="ltn__pagination">
                             <ul >
-                                <!-- <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                <li><a href="#">1</a></li>
+                                <li><a href="#" onclick="changePage(1)"><i class="fas fa-angle-double-left"></i></a></li>
+                                <!-- <li><a href="#">1</a></li>
                                 <li class="active"><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">...</a></li>
@@ -850,53 +840,56 @@
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const productContainer = document.getElementById('product-container');
-    const paginationContainer = document.getElementById('pagination-container');
+  const itemsPerPage = 8;
+let totalItems = document.getElementsByClassName('col-xl-3 col-lg-4 col-sm-6 col-6').length;
+let currentPage = 1;
+const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    if (!productContainer || !paginationContainer) {
-        console.error("Product or pagination container not found");
-        return;
+function setupPagination(totalPages) {
+    const paginationUl = document.querySelector('.ltn__pagination ul');
+    paginationUl.innerHTML = ''; // Clear existing
+
+    // Add the Previous button
+    paginationUl.innerHTML += `<li><a href="#" onclick="changePage(currentPage - 1)"><i class="fas fa-angle-double-left"></i></a></li>`;
+
+    for (let i = 1; i <= totalPages; i++) {
+        paginationUl.innerHTML += `<li${currentPage === i ? ' class="active"' : ''}><a href="#" onclick="changePage(${i})">${i}</a></li>`;
     }
 
-    const productItems = document.querySelectorAll('.ltn__product-item');
-    const productsPerPage = 6;
-    let currentPage = 1;
+    // Add the Next button
+    paginationUl.innerHTML += `<li><a href="#" onclick="changePage(currentPage + 1)"><i class="fas fa-angle-double-right"></i></a></li>`;
+}
 
-    function displayProducts() {
-        productContainer.innerHTML = ''; // Clear previous products
+function showPage(page) {
+    const products = Array.from(document.getElementsByClassName('col-xl-3 col-lg-4 col-sm-6 col-6'));
+    const start = (page - 1) * itemsPerPage;
+    const end = Math.min(start + itemsPerPage, products.length);
+    products.forEach((product, index) => {
+        product.style.display = index >= start && index < end ? '' : 'none';
+    });
 
-        const startIndex = (currentPage - 1) * productsPerPage;
-        const endIndex = Math.min(startIndex + productsPerPage, productItems.length);
+    // Update the showing product number text
+    updateProductCountDisplay(start + 1, end, products.length);
+}
 
-        for (let i = startIndex; i < endIndex; i++) {
-            const productItem = productItems[i];
-            productContainer.appendChild(productItem.cloneNode(true));
-        }
-    }
+function updateProductCountDisplay(startRange, endRange, totalProducts) {
+    const showingProductNumberElement = document.querySelector('.showing-product-number span');
+    showingProductNumberElement.textContent = `نمایش ${startRange}-${endRange} از ${totalProducts}`;
+}
 
-    function createPaginationControls() {
-        paginationContainer.innerHTML = ''; // Clear previous pagination controls
 
-        const totalPages = Math.ceil(productItems.length / productsPerPage);
+function changePage(page) {
+    if (page < 1 || page > totalPages) return;
 
-        for (let page = 1; page <= totalPages; page++) {
-            const listItem = document.createElement('li');
-            const link = document.createElement('a');
-            link.textContent = page;
-            link.href = '#';
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                currentPage = page;
-                displayProducts();
-            });
-            listItem.appendChild(link);
-            paginationContainer.querySelector('ul').appendChild(listItem);
-        }
-    }
+    currentPage = page;
+    showPage(page);
+    setupPagination(totalPages); // Update pagination bar
+}
 
-    createPaginationControls();
-    displayProducts();
+// Initial setup
+document.addEventListener('DOMContentLoaded', () => {
+    setupPagination(totalPages);
+    showPage(1); // Start on page 1
 });
 
 

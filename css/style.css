@@ -10479,7 +10479,8 @@ blockquote {
 /* ltn__pagination-3 */
 .ltn__pagination ul {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+direction: ltr;}
   .ltn__pagination ul li {
     list-style: none;
     display: inline-block;
