@@ -4314,7 +4314,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+  border-radius: 15px;  }
 
 .ltn__header-middle-area > .container-fluid > .row > .col,
 .ltn__header-middle-area > .container > .row > .col {
@@ -5142,7 +5143,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ---------------------------------------- */
 .header-search-1 {
   cursor: pointer;
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 15px; }
   .header-search-1 .search-icon {
     min-width: 25px;
     text-align: center;
@@ -5409,7 +5411,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-color: #e4e8ea; }
 
 .ltn__header-5 .ltn__header-options {
-  margin-right: 30px; }
+  margin-right: 230px; }
 
 /* ----------------------------------------
   ltn__header-logo-mobile-menu-in-mobile
@@ -5435,7 +5437,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__header-4 .ltn__header-middle-area.sticky-active,
 .ltn__header-5 .ltn__header-middle-area.sticky-active {
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  border-bottom-right-radius: 23px;
+  border-bottom-left-radius: 23px }
 
 /* Sticky Background Secondary */
 .sticky-active.ltn__sticky-bg-secondary {
@@ -6407,10 +6411,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .slick-slide-arrow-1:hover .slick-arrow {
     opacity: 1;
     visibility: visible;
-    right: 60px; }
+    right: 60px;
+    border-radius: 15px; }
   .slick-slide-arrow-1:hover .slick-next {
     left: 60px;
-    right: auto; } }
+    right: auto; 
+    border-radius: 15px;} }
 
 /* slide-item-2 */
 .ltn__slide-item-2 {
@@ -7440,7 +7446,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   border-color: var(--border-color-8);
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
+  transition: all 0.3s ease 0s;
+  border-radius: 12px; }
   .ltn__product-item-3 .product-img::before {
     display: none; }
   .ltn__product-item-3 .product-info {
@@ -9589,7 +9596,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  width: max-content; }
   .ltn__feature-item-box-wrap-2 .ltn__feature-item-8 {
     min-width: 280px; }
 
@@ -9943,6 +9951,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .ltn__blog-item-3-normal .ltn__blog-item-3 .ltn__blog-brief {
     width: calc( 100%); }
   .ltn__blog-item-3-normal .ltn__blog-item-3 .ltn__blog-img + .ltn__blog-brief {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     margin-top: 0px; }
 
 .ltn__blog-item-3 .ltn__blog-img {
@@ -10875,11 +10885,13 @@ direction: ltr;}
   position: relative; }
 
 .ltn__banner-img {
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 12px; }
   .ltn__banner-img img {
     -webkit-transition: all 3.5s ease 0s;
     -o-transition: all 3.5s ease 0s;
-    transition: all 3.5s ease 0s; }
+    transition: all 3.5s ease 0s;
+   }
   .ltn__banner-img:hover img {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -12465,7 +12477,8 @@ align-self: center;
 
 .about-author-info-2 .about-author-info-2-contact {
   padding: 10px 20px;
-  background-color: var(--section-bg-1); }
+  background-color: var(--section-bg-1);
+  border-radius: 12px; }
   .about-author-info-2 .about-author-info-2-contact i {
     font-size: 25px;
     margin-left: 15px;
@@ -14296,7 +14309,9 @@ align-self: center;
 -------------------------*/
 .footer-top-area {
   padding-top: 92px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
 
 .footer-widget {
   margin-bottom: 60px; }
@@ -14664,7 +14679,8 @@ align-self: center;
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 1;
-  margin-left: 15px; }
+  margin-left: 15px;
+  border-radius: 15px; }
   .btn:last-child {
     margin-left: 0; }
 
@@ -14750,7 +14766,8 @@ align-self: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  border-radius: 15px; }
 
 .btn-effect-1:after {
   width: 0%;
