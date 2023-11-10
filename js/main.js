@@ -49,6 +49,8 @@
   "use strict";
 
     jQuery(document).ready(function(){
+
+        
         preloaderSetup();
 
         function preloaderSetup() {

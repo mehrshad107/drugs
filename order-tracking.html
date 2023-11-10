@@ -245,12 +245,14 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="account-login-inner section-bg-1">
-                        <form action="#" class="ltn__form-box contact-form-box">
+                        <form action="javascript:void(0);" class="ltn__form-box contact-form-box" onsubmit="redirectToTracking()">
                            <div>
                             <p>کد رهگیری دریافتی از پشتیبانی را اینجا وارد کنید </p>
                             <label>  
-                                <input class="order-label" type="text">
+                                <input id="trackingCode"class="order-label" type="text">
                             </label>
+                            <button type="submit" class="theme-btn-3 btn btn-effect-3 text-uppercase">
+                                جست و جو</button>
                            </div>
                         </form>
                     </div>
@@ -267,7 +269,7 @@
                 <div class="col-lg-12">
                     <div class="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg position-relative text-center---">
                         <div class="coll-to-info text-color-white">
-                            <h1> داروخانه تلگرام برای رفع نیاز های شما به <strong>قرص ها</strong> <strong> و انواع دارو </strong><br>  </h1>
+                            <h1> داروخانه تلگرام برای رفع نیاز های شما به <strong>قرص ها</strong><br>  </h1>
                         </div>
                         <div class="btn-wrapper">
                             <a class="btn btn-effect-3 btn-white" href="shop.html">همه محصولات <i class="icon-next"></i></a>
@@ -405,7 +407,13 @@
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-  
+    <script>
+        function redirectToTracking() {
+            var trackingCode = document.getElementById('trackingCode').value;
+            var url = 'https://tracking.post.ir/search.aspx?id=' + encodeURIComponent(trackingCode);
+            window.location.href = url;
+        }
+        </script>
 </body>
 </html>
 
