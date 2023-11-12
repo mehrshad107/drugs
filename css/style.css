@@ -713,6 +713,9 @@ ol li {
 .ltn__secondary-bg-2 {
   background-color: var(--ltn__secondary-color-2); }
 
+.ltn__secondary-bg-1{
+  background-color: #071c1f;
+}
 .white-bg {
   background-color: var(--white); }
 
@@ -5793,7 +5796,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: auto; }
 
 .ltn__header-row-bg-white .row {
-  background-color: var(--white); }
+  background-color: #f2f6f7; }
 
 @media (min-width: 1200px) {
   .ltn__header-padding .row {
