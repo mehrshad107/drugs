@@ -4248,7 +4248,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ---------------------------------------------- */
 .ltn__header-top-area {
   border-bottom: 1px solid;
-  border-color: var(--border-color-3); }
+  border-color: var(--border-color-3);
+  color: #071c1f; }
   .ltn__header-top-area .ltn__social-media ul li {
     font-size: 14px;
     margin: 0 0 0 10px; }
@@ -10502,7 +10503,7 @@ direction: ltr;}
     list-style: none;
     display: inline-block;
     margin-left: 10px; }
-    .ltn__pagination ul li:last-child {
+    .ltn__pagination ul  {
       margin-left: 0px; }
     .ltn__pagination ul li a {
       height: 50px;
@@ -14317,8 +14318,7 @@ align-self: center;
 .footer-top-area {
   padding-top: 92px;
   padding-bottom: 20px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px; }
+}
 
 .footer-widget {
   margin-bottom: 60px; }
@@ -14479,7 +14479,9 @@ align-self: center;
 ---------------------------------------------------- */
 .ltn__copyright-area {
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;  }
   .ltn__copyright-area .payment-method {
     text-align: left; }
 
