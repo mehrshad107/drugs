@@ -16758,40 +16758,6 @@ input.cart-plus-minus-box {
 }
 
 /* ----------------------------------------------------
-    Team Details
----------------------------------------------------- */
-.ltn__team-details-member-info .team-details-img {
-  margin-bottom: 30px;
-  max-width: 350px;
-}
-
-.ltn__team-details-member-info.text-right .team-details-img {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.ltn__team-details-member-info.text-center .team-details-img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.ltn__team-details-member-about ul {
-  margin: 0;
-}
-.ltn__team-details-member-about ul li {
-  list-style: none;
-  display: block;
-}
-.ltn__team-details-member-about ul li strong {
-  min-width: 120px;
-  display: inline-block;
-}
-
-.ltn__team-details-member-about > ul {
-  padding: 0;
-}
-
-/* ----------------------------------------------------
     Our History Area
 ---------------------------------------------------- */
 .ltn__our-history-inner .ltn__tab-menu .nav {
