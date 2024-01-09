@@ -44,11 +44,12 @@
 ======================================
 [ End table content ]
 ======================================*/
-window.$crisp=[];window.CRISP_WEBSITE_ID="e33c5d21-c56f-4a4f-8f65-78c20cafcfff";(function(){d = document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
 
 (function ($) {
     "use strict";
-
+    
+    window.$crisp = []; window.CRISP_WEBSITE_ID = "e33c5d21-c56f-4a4f-8f65-78c20cafcfff"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();
+    
     jQuery(document).ready(function () {
 
 
