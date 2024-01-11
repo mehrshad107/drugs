@@ -44,6 +44,10 @@
 # Custom margin Padding
 
 
+/* ====================================================
+    Gutter Code 
+==================================================== */
+
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -136,10 +140,6 @@
 .ch-cn-l .ch-cn-l-info a img {
   margin-left: 7px;
 }
-
-/* ====================================================
-    Gutter Code 
-==================================================== */
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -485,7 +485,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 23.4px;
+  font-size: 23.5px;
 }
 
 h4,
@@ -814,9 +814,6 @@ ol li {
   background-color: var(--ltn__secondary-color-2);
 }
 
-.ltn__secondary-bg-1 {
-  background-color: #071c1f;
-}
 .white-bg {
   background-color: var(--white);
 }
@@ -906,7 +903,9 @@ ol li {
   top: 0;
   background-color: var(--ltn__primary-color);
 }
-
+.ltn__secondary-bg-1 {
+  background-color: #071c1f;
+}
 .before-bg-left {
   position: relative;
 }
@@ -1121,6 +1120,7 @@ textarea {
   padding-left: 40px;
   border-radius: 15px;
 }
+
 
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
@@ -1706,15 +1706,6 @@ ul {
   margin-bottom: -2px;
 }
 
-.not-found {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-top: 108px;
-}
-
 /* slick-arrow */
 .slick-arrow {
   cursor: pointer;
@@ -1807,6 +1798,14 @@ ul {
 }
 
 /* slick-arrow-3 */
+.not-found {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 108px;
+}
 .slick-arrow-3 .slick-arrow {
   cursor: pointer;
   position: absolute;
@@ -5172,6 +5171,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
+
 /* --------------------------------------------------------------
     Header
 -------------------------------------------------------------- */
@@ -5276,6 +5276,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: relative;
   border-radius: 15px;
 }
+
 
 .ltn__header-middle-area > .container-fluid > .row > .col,
 .ltn__header-middle-area > .container > .row > .col {
@@ -11847,7 +11848,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   flex-flow: wrap;
   -webkit-box-shadow: none;
   box-shadow: none;
-  width: max-content;
+  /* width: max-content; */
 }
 .ltn__feature-item-box-wrap-2 .ltn__feature-item-8 {
   min-width: 280px;
@@ -12970,7 +12971,7 @@ blockquote::before {
   display: inline-block;
   margin-left: 10px;
 }
-.ltn__pagination ul {
+.ltn__pagination ul li:last-child {
   margin-left: 0px;
 }
 .ltn__pagination ul li a {
@@ -14201,7 +14202,6 @@ input.cart-plus-minus-box {
 .author-name-designation {
   align-self: center;
 }
-
 .ltn__faq-inner .card {
   border: none;
   border-radius: 0;
