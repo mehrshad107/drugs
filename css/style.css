@@ -968,9 +968,9 @@ mark {
 }
 
 hr {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-top: 1px solid var(--border-color-12);
+  margin-top: 20x;
+  margin-bottom: 20px;
+  border-top: solid var(--border-color-12);
 }
 
 a.text-decoration,
